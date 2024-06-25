@@ -1,13 +1,31 @@
-import React from 'react';
-import './App.css';
+import { useState, useEffect } from 'react';
+import Clock from './components/DigitalClock';
 
-function App() {
+function useTime() {
+  const [time, setTime] = useState(() => new Date());
+  useEffect(() => {
+    const id = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+    return () => clearInterval(id);
+  }, []);
+  return time;
+}
+
+export default function App() {
+  const time = useTime();
+  const [color, setColor] = useState('lightcoral');
   return (
-    <div className="largeDiv" id="largeDiv">
-      <label htmlFor="inputId">I am the Label</label>
-      <input id="inputId" type="number" defaultValue={9469444007}></input>
+    <div>
+      <p>
+        Pick a color:{' '}
+        <select value={color} onChange={(e) => setColor(e.target.value)}>
+          <option value="lightcoral">lightcoral</option>
+          <option value="midnightblue">midnightblue</option>
+          <option value="rebeccapurple">rebeccapurple</option>
+        </select>
+      </p>
+      <Clock color={color} time={time.toLocaleTimeString()} />
     </div>
   );
 }
-
-export default App;
