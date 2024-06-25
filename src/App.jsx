@@ -1,31 +1,17 @@
-import { useState, useEffect } from 'react';
-import Clock from './components/DigitalClock';
-
-function useTime() {
-  const [time, setTime] = useState(() => new Date());
-  useEffect(() => {
-    const id = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-    return () => clearInterval(id);
-  }, []);
-  return time;
+import React from 'react';
+import Props from './components/Props';
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Props
+          name="Nazrul Islam Bhat"
+          age={33}
+          profession="Software Engineer"
+        />
+        <Props name="Abdullah Islam Bhat" age={0.7} profession="Gol Bacha" />
+      </div>
+    );
+  }
 }
-
-export default function App() {
-  const time = useTime();
-  const [color, setColor] = useState('lightcoral');
-  return (
-    <div>
-      <p>
-        Pick a color:{' '}
-        <select value={color} onChange={(e) => setColor(e.target.value)}>
-          <option value="lightcoral">lightcoral</option>
-          <option value="midnightblue">midnightblue</option>
-          <option value="rebeccapurple">rebeccapurple</option>
-        </select>
-      </p>
-      <Clock color={color} time={time.toLocaleTimeString()} />
-    </div>
-  );
-}
+export default App;
