@@ -1,15 +1,21 @@
 import React from 'react';
 import Props from './components/Props';
+import UserCard from './components/UserCard';
+import users from './user.json';
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Props
-          name="Nazrul Islam Bhat"
-          age={33}
-          profession="Software Engineer"
-        />
-        <Props name="Abdullah Islam Bhat" age={0.7} profession="Gol Bacha" />
+      <div className="cards">
+        {users.map((user) => (
+          <UserCard
+            key={user.id}
+            name={user.name}
+            language={user.language}
+            id={user.id}
+            bio={user.bio}
+            version={user.version}
+          />
+        ))}
       </div>
     );
   }

@@ -16,27 +16,40 @@
 .name,
 .profession {
   font-weight: bold;
-  background-color: #646cff;
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: #ffffff;
 }
-.profession{
+.profession {
   background-color: aquamarine;
   color: #242424;
 }
+.card {
+  border-radius: 10px;
+  background-color: #646cffaa;
+  color: #242424;
+  padding: 30px 20px;
+  border: 2px solid #242424;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #61dafbaa;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  margin: 0 auto;
+}
 .age {
   font-weight: bold;
-  background-color: #61dafb;
-  padding: 10px 20px;
-  border-radius: 10px;
 }
-
+.bio{
+  font-size: .9rem;
+}
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
   background-color: #ffffff;
   color: #242424;
