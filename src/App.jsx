@@ -6,16 +6,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="cards">
-        {users.map((user) => (
-          <UserCard
-            key={user.id}
-            name={user.name}
-            language={user.language}
-            id={user.id}
-            bio={user.bio}
-            version={user.version}
-          />
-        ))}
+        {/* {users.map((user) => {
+          return (
+            <UserCard
+              key={user.id}
+              name={user.name}
+              language={user.language}
+              id={user.id}
+              bio={user.bio}
+              version={user.version}
+            />
+          );
+        })} */}
       </div>
     );
   }
