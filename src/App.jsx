@@ -5,7 +5,7 @@ function App() {
   function changeCounter() {
     setCounter((currentCounter) => currentCounter + 1);
   }
-  return <h1 onClick={changeCounter}>{counter}</h1>;
+  return <h1 onMouseEnter={changeCounter}>{counter}</h1>;
 }
 
 export default App;
