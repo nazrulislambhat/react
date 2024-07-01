@@ -1,25 +1,18 @@
-import React from 'react';
-import Props from './components/Props';
-import UserCard from './components/UserCard';
-import users from './user.json';
-class App extends React.Component {
-  render() {
-    return (
-      <div className="cards">
-        {/* {users.map((user) => {
-          return (
-            <UserCard
-              key={user.id}
-              name={user.name}
-              language={user.language}
-              id={user.id}
-              bio={user.bio}
-              version={user.version}
-            />
-          );
-        })} */}
-      </div>
-    );
+import { useState } from 'react';
+
+function App() {
+  const [name, setName] = useState('NAZRUL');
+  const [age, setAge] = useState(25);
+  function changeName() {
+    setName('ISLAM');
+    setAge((currentAge) => currentAge + 1);
+    setAge(age + 1);
   }
+  return (
+    <h1 onClick={changeName}>
+      Hi {name} Your age is {age}
+    </h1>
+  );
 }
+
 export default App;
