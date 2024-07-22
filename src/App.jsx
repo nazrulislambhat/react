@@ -1,12 +1,12 @@
-import { React, useState } from 'react';
-import ChildComponent from './components/ChildComponent';
+import ExampleIf from './components/ExampleIf';
+import ExampleIfElse from './components/ExampleIfElse';
+
 function App() {
-  const [count, setCount] = useState(0);
-  console.log('render app');
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>{count}</button>
-      <ChildComponent />
+      <h1>Hello Conditional Rendering</h1>
+      <ExampleIf />
+      <ExampleIfElse />
     </div>
   );
 }
