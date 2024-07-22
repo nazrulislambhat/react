@@ -1,11 +1,13 @@
 import { React, useState } from 'react';
-import FunctionComponent from './components/FunctionComponent';
+import ChildComponent from './components/ChildComponent';
 function App() {
+  const [count, setCount] = useState(0);
+  console.log('render app');
   return (
-    <>
-      <h1>React Components</h1>
-      <FunctionComponent />
-    </>
+    <div>
+      <button onClick={() => setCount(count + 1)}>{count}</button>
+      <ChildComponent />
+    </div>
   );
 }
 
