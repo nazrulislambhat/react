@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import UpdatedComponent from './Counter';
 
 class HoverCounter extends Component {

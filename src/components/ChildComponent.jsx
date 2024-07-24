@@ -1,8 +1,8 @@
-import { React, useState } from 'react';
+import { useState } from 'react';
 
 function ChildComponent() {
   const [name, setName] = useState('');
-  console.log('render child');
+  console.log('Render Child');
   return (
     <div className="child">
       <input value={name} onChange={(e) => setName(e.target.value)}></input>
@@ -11,5 +11,4 @@ function ChildComponent() {
     </div>
   );
 }
-
 export default ChildComponent;

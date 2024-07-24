@@ -1,19 +1,12 @@
-import ClickCounter from './components/ClickCounter';
-import ExampleAnd from './components/ExampleAnd';
-import ExampleIf from './components/ExampleIf';
-import ExampleIfElse from './components/ExampleIfElse';
-import ExampleMultipleConditions from './components/ExampleMultipleConditions';
-import ExampleNestedConditions from './components/ExampleNestedConditions';
-import ExampleSwitchCase from './components/ExampleSwitchCase';
-import ExampleTernary from './components/ExampleTernary';
-import ExampleWithHOC from './components/ExampleWithHOC';
-import HoverCounter from './components/HoverCounter';
-
+import ChildComponent from './components/ChildComponent';
+import { useState } from 'react';
 function App() {
+  const [isShown, setIsShown] = useState(false);
+  const Child = isShown ? <ChildComponent /> : null;
   return (
     <div>
-      <ClickCounter />
-      <HoverCounter />
+      <button onClick={() => setIsShown((s) => !s)}>Show/Hide</button>
+      {Child}
     </div>
   );
 }
