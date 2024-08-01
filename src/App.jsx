@@ -9,6 +9,7 @@ import UseEffectUpdate from './hooks/UseEffectUpdate.jsx';
 import UseEffectAPI from './hooks/UseEffectAPI.jsx';
 import UseRefExample from './hooks/UseRefExample.jsx';
 import Timer from './hooks/UseRefTimer.jsx';
+import UseRef from './hooks/UseRef.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -22,7 +23,8 @@ function App() {
       <UseEffectUpdate />
       <UseEffectAPI /> */}
       {/* <UseRefExample /> */}
-      <Timer />
+      {/* <Timer /> */}
+      <UseRef />
     </div>
   );
 }
