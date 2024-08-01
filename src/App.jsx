@@ -6,6 +6,7 @@ import UseStateArray from './components/UseStateArray.jsx';
 import TaskList from './components/UseStateArray.jsx';
 import User from './components/UseEffect.jsx';
 import UseEffectUpdate from './components/UseEffectUpdate.jsx';
+import UseEffectAPI from './components/UseEffectAPI.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -17,6 +18,7 @@ function App() {
       <UseStateForm />
       <TaskList />
       <UseEffectUpdate />
+      <UseEffectAPI />
     </div>
   );
 }

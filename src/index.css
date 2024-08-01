@@ -58,6 +58,12 @@ body {
 * {
   margin: 0;
 }
+pre {
+  font-size: 0.6rem;
+  color: orangered;
+  border: 1px solid palegreen;
+  margin: 10px 0px;
+}
 button {
   padding: 10px 20px;
   background-color: transparent;
