@@ -11,7 +11,7 @@ import UseRefExample from './hooks/UseRefExample.jsx';
 import Timer from './hooks/UseRefTimer.jsx';
 import UseRef from './hooks/UseRef.jsx';
 import UseMemoFactorial from './hooks/UseMemoFactorial.jsx';
-import ItemList from './hooks/ItemList.jsx';
+import UseMemoFactorial2 from './hooks/UseMemoFactorial2.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -27,7 +27,7 @@ function App() {
       {/* <UseRefExample /> */}
       {/* <Timer /> */}
       {/* <UseRef /> */}
-      {/* <UseMemoFactorial /> */}
+      <UseMemoFactorial2 />
       {/* <ItemList /> */}
     </div>
   );
