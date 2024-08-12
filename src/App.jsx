@@ -10,6 +10,7 @@ import UseEffectAPI from './hooks/UseEffectAPI.jsx';
 import UseRefExample from './hooks/UseRefExample.jsx';
 import Timer from './hooks/UseRefTimer.jsx';
 import UseRef from './hooks/UseRef.jsx';
+import UseReducerIncrement from './hooks/UseReducerIncrement.jsx';
 import UseMemoFactorial from './hooks/UseMemoFactorial.jsx';
 import UseMemoFactorial2 from './hooks/UseMemoFactorial2.jsx';
 function App() {
@@ -27,8 +28,9 @@ function App() {
       {/* <UseRefExample /> */}
       {/* <Timer /> */}
       {/* <UseRef /> */}
-      <UseMemoFactorial2 />
+      {/* <UseMemoFactorial2 /> */}
       {/* <ItemList /> */}
+      <UseReducerIncrement />
     </div>
   );
 }
