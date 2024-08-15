@@ -17,6 +17,7 @@ import UseReducerExample4 from './hooks/UseReducerExample4.jsx';
 import UseReducerExample5 from './hooks/UseReducerExample5.jsx';
 import UseMemoFactorial from './hooks/UseMemoFactorial.jsx';
 import UseMemoFactorial2 from './hooks/UseMemoFactorial2.jsx';
+import CallbackHook from './components/CallbackHook.jsx';
 
 function App() {
   // const [isShown, setIsShown] = useState(false);
@@ -38,8 +39,8 @@ function App() {
       {/* <UseReducerExample1 />
       <UseReducerExample2 /> */}
       {/* <UseReducerExample3 /> */}
-      <UseReducerExample4 />
-  
+      {/* <UseReducerExample4 /> */}
+      <CallbackHook />
     </div>
   );
 }
