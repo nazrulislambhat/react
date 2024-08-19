@@ -18,7 +18,7 @@ import UseReducerExample5 from './hooks/UseReducerExample5.jsx';
 import UseMemoFactorial from './hooks/UseMemoFactorial.jsx';
 import UseMemoFactorial2 from './hooks/UseMemoFactorial2.jsx';
 import CallbackHook from './components/CallbackHook.jsx';
-
+import UseContextHookTheme from './hooks/UseContextHookTheme.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -40,7 +40,8 @@ function App() {
       <UseReducerExample2 /> */}
       {/* <UseReducerExample3 /> */}
       {/* <UseReducerExample4 /> */}
-      <CallbackHook />
+      {/* <CallbackHook /> */}
+      <UseContextHookTheme />
     </div>
   );
 }
