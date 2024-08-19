@@ -41,7 +41,7 @@ function App() {
       {/* <UseReducerExample3 /> */}
       {/* <UseReducerExample4 /> */}
       {/* <CallbackHook /> */}
-      <UseContextHookTheme />
+      {/*<UseContextHookTheme />*/}
     </div>
   );
 }
