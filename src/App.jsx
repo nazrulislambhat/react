@@ -20,6 +20,8 @@ import UseMemoFactorial2 from './hooks/UseMemoFactorial2.jsx';
 import CallbackHook from './components/CallbackHook.jsx';
 import UseContextHookTheme from './hooks/UseContextHookTheme.jsx';
 import OnlineStatus from './CustomHooks/OnlineStatus.jsx';
+import TwoWayDataBinding
+  from "./components/TwoWayDataBinding.jsx";
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -43,7 +45,8 @@ function App() {
       {/* <UseReducerExample4 /> */}
       {/* <CallbackHook /> */}
       {/*<UseContextHookTheme />*/}
-      <OnlineStatus />
+      {/*<OnlineStatus />*/}
+      <TwoWayDataBinding />
     </div>
   );
 }
