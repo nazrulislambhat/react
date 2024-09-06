@@ -23,6 +23,7 @@ import OnlineStatus from './CustomHooks/OnlineStatus.jsx';
 import UseReducerBest1 from './hooks/UseReducerBest1.jsx';
 import UseReducerBest2 from './hooks/UseReducerBest2.jsx';
 import TwoWayDataBinding from './components/TwoWayDataBinding.jsx';
+import DataFetch from './components/DataFetch.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -49,7 +50,8 @@ function App() {
       {/*<OnlineStatus />*/}
       {/* <TwoWayDataBinding /> */}
       {/* <UseReducerBest1 /> */}
-      <UseReducerBest2 />
+      {/* <UseReducerBest2 /> */}
+      <DataFetch />
     </div>
   );
 }
