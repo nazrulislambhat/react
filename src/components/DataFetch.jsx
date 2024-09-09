@@ -7,6 +7,7 @@ export default function DataFetch() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
   const [page, setPage] = useState(0);
+
   useEffect(() => {
     const fetchPosts = async () => {
       setIsLoading(true);
