@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-export default function PersonList() {
+export default function GetPersonList() {
   const [persons, setPersons] = useState([]);
 
   useEffect(() => {

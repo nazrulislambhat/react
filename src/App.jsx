@@ -24,7 +24,9 @@ import UseReducerBest1 from './hooks/UseReducerBest1.jsx';
 import UseReducerBest2 from './hooks/UseReducerBest2.jsx';
 import TwoWayDataBinding from './components/TwoWayDataBinding.jsx';
 import DataFetch from './components/DataFetch.jsx';
-import PersonList from './components/PersonList.jsx';
+import GetPersonList from './components/GetPersonList.jsx';
+import PostPersonList from './components/PostPersonList.jsx';
+
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
@@ -53,7 +55,8 @@ function App() {
       {/* <UseReducerBest1 /> */}
       {/* <UseReducerBest2 /> */}
       {/* <DataFetch /> */}
-      <PersonList />
+      <GetPersonList />
+      <PostPersonList />
     </div>
   );
 }
