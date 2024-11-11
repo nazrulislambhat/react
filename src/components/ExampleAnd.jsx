@@ -1,4 +1,3 @@
-import React from 'react';
 
 function ExampleAnd() {
   const isLoggedIN = false;
