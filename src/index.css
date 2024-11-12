@@ -59,6 +59,9 @@ button:active {
   box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
   transform: translateY(1px);
 }
+input {
+  cursor: pointer;
+}
 
 #contact h1 {
   display: flex;

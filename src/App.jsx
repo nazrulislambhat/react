@@ -28,6 +28,7 @@
 
 import ReactFormControlled from './components/ReactFormControlled';
 import ReactFormUncontrolled from './components/ReactFormUncontrolled';
+import ReactHookForm from './components/ReactHookForm';
 
 // import PostPersonList from './components/PostPersonList.jsx';
 function App() {
@@ -61,8 +62,9 @@ function App() {
       {/* <DataFetch /> */}
       {/* <GetPersonList />
       <PostPersonList /> */}
-      <ReactFormControlled />
-      <ReactFormUncontrolled />
+      {/* <ReactFormControlled />
+      <ReactFormUncontrolled /> */}
+      <ReactHookForm />
     </div>
   );
 }
