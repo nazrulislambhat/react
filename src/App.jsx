@@ -26,10 +26,10 @@
 // import DataFetch from './components/DataFetch.jsx';
 // import GetPersonList from './components/GetPersonList.jsx';
 
-import ReactFormControlled from './components/ReactFormControlled';
-import ReactFormUncontrolled from './components/ReactFormUncontrolled';
-import ReactHookForm from './components/ReactHookForm';
-
+// import ReactFormControlled from './components/ReactFormControlled';
+// import ReactFormUncontrolled from './components/ReactFormUncontrolled';
+// import ReactHookForm from './components/ReactHookForm';
+import ReactForm from './components/ReactForm';
 // import PostPersonList from './components/PostPersonList.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
@@ -64,7 +64,8 @@ function App() {
       <PostPersonList /> */}
       {/* <ReactFormControlled />
       <ReactFormUncontrolled /> */}
-      <ReactHookForm />
+      {/* <ReactHookForm /> */}
+      <ReactForm />
     </div>
   );
 }
