@@ -30,6 +30,8 @@
 // import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
 import ReactForm from './components/ReactForm';
+import NazrulForm from './components/NazrulForm';
+import FormikForm from './components/FormikForm';
 // import PostPersonList from './components/PostPersonList.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
@@ -65,7 +67,9 @@ function App() {
       {/* <ReactFormControlled />
       <ReactFormUncontrolled /> */}
       {/* <ReactHookForm /> */}
-      <ReactForm />
+      {/* <ReactForm /> */}
+      {/* <NazrulForm /> */}
+      <FormikForm />
     </div>
   );
 }
