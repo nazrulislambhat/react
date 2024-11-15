@@ -1,5 +1,5 @@
 // import ChildComponent from './components/ChildComponent';
-// import { useState } from 'react';
+import { useState } from 'react';
 // import UseState from './hooks/UseState.jsx';
 // import UseStateForm from './hooks/UseStateForm.jsx';
 // import UseStateArray from './hooks/UseStateArray.jsx';
@@ -29,16 +29,31 @@
 // import ReactFormControlled from './components/ReactFormControlled';
 // import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
-import ReactForm from './components/ReactForm';
-import NazrulForm from './components/NazrulForm';
-import FormikForm from './components/FormikForm';
+// import ReactForm from './components/ReactForm';
+// import NazrulForm from './components/NazrulForm';
+// import FormikForm from './components/FormikForm';
 // import PostPersonList from './components/PostPersonList.jsx';
 function App() {
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
+  const [count, setCount] = useState(0);
+  const handleInc = () => {
+    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
+  };
+  const handleReset = () => {
+    setCount(0);
+  };
+  const handleDec = () => {
+    setCount((prevCount) => prevCount - 1);
+  };
   return (
     <div className="app">
       <h1>React JS</h1>
+      <h1 className="count">{count}</h1>
+      <button onClick={handleInc}>+</button>
+      <button onClick={handleDec}>-</button>
+      <button onClick={handleReset}>Reset</button>
       {/*<button onClick={() => setIsShown((s) => !s)}>Show/Hide</button>*/}
       {/*{Child}*/}
       {/* <UseState />
@@ -69,7 +84,7 @@ function App() {
       {/* <ReactHookForm /> */}
       {/* <ReactForm /> */}
       {/* <NazrulForm /> */}
-      <FormikForm />
+      {/* <FormikForm /> */}
     </div>
   );
 }
