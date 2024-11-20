@@ -1,5 +1,5 @@
 // import ChildComponent from './components/ChildComponent';
-import { useState } from 'react';
+//import { useState } from 'react';
 // import UseState from './hooks/UseState.jsx';
 // import UseStateForm from './hooks/UseStateForm.jsx';
 // import UseStateArray from './hooks/UseStateArray.jsx';
@@ -26,6 +26,9 @@ import { useState } from 'react';
 // import DataFetch from './components/DataFetch.jsx';
 // import GetPersonList from './components/GetPersonList.jsx';
 
+import EffectExample from './components/EffectExample';
+import PropsComponent from './components/PropsComponent';
+
 // import ReactFormControlled from './components/ReactFormControlled';
 // import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
@@ -50,6 +53,9 @@ function App() {
   return (
     <div className="app">
       <h1>React JS</h1>
+      {/* <PropsComponent name="name" info="Some Information" />
+      <PropsComponent name="name2" info="Some Information2" /> */}
+      <EffectExample />
       {/* <h1 className="count">{count}</h1>
       <button onClick={handleInc}>+</button>
       <button onClick={handleDec}>-</button>
