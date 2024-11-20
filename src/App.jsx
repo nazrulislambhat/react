@@ -28,15 +28,22 @@
 
 import EffectExample from './components/EffectExample';
 import PropsComponent from './components/PropsComponent';
-
+import ReducerState from './components/ReducerState';
 // import ReactFormControlled from './components/ReactFormControlled';
 // import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
 // import ReactForm from './components/ReactForm';
 // import NazrulForm from './components/NazrulForm';
 // import FormikForm from './components/FormikForm';
-// import PostPersonList from './components/PostPersonList.jsx';
+// import PostPersonList from './components/PostPersonList.jsx';]
+// import Section from './components/Section';
+// import Heading from './components/Heading';
+// import ImageComponent from './components/ImageComponent';
+// import Level1 from './components/Level1';
+// import Level1Context from './components/Level1Context';
+// import { UsernameContext } from './components/Context';
 function App() {
+  // const username = 'nazrulislam.dev';
   // const [isShown, setIsShown] = useState(false);
   // const Child = isShown ? <ChildComponent /> : null;
   // const [count, setCount] = useState(0);
@@ -53,9 +60,37 @@ function App() {
   return (
     <div className="app">
       <h1>React JS</h1>
+      <ReducerState />
+      {/* <div className="section">
+        <h1>Prop Drilling</h1>
+        <Level1 username={username} />
+      </div>
+      <div className="section">
+        <h1>Context API Example</h1>
+        <UsernameContext.Provider value={username}>
+          <Level1Context />
+        </UsernameContext.Provider>
+      </div> */}
+      {/* <Section>
+        <Heading>Title</Heading>
+        <Section>
+          <Heading>Heading</Heading>
+          <Heading>Heading</Heading>
+          <Heading>Heading</Heading>
+          <Section>
+            <Heading>Sub-heading</Heading>
+            <Heading>Sub-heading</Heading>
+            <Heading>Sub-heading</Heading>
+            <Section>
+              <Heading>Sub-sub-heading</Heading>
+              <Heading>Sub-sub-heading</Heading>
+              <Heading>Sub-sub-heading</Heading>
+            </Section>
+          </Section>
+        </Section>
+      </Section> */}
       {/* <PropsComponent name="name" info="Some Information" />
       <PropsComponent name="name2" info="Some Information2" /> */}
-      <EffectExample />
       {/* <h1 className="count">{count}</h1>
       <button onClick={handleInc}>+</button>
       <button onClick={handleDec}>-</button>
