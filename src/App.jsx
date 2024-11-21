@@ -28,7 +28,7 @@
 
 import EffectExample from './components/EffectExample';
 import PropsComponent from './components/PropsComponent';
-import ReducerState from './components/ReducerState';
+import ReducerPractice from './components/ReducerPractice';
 // import ReactFormControlled from './components/ReactFormControlled';
 // import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="app">
       <h1>React JS</h1>
-      <ReducerState />
+      <ReducerPractice />
       {/* <div className="section">
         <h1>Prop Drilling</h1>
         <Level1 username={username} />
