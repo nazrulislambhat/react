@@ -25,10 +25,9 @@
 // import TwoWayDataBinding from './components/TwoWayDataBinding.jsx';
 // import DataFetch from './components/DataFetch.jsx';
 // import GetPersonList from './components/GetPersonList.jsx';
-
-import EffectExample from './components/EffectExample';
-import PropsComponent from './components/PropsComponent';
-import ReducerPractice from './components/ReducerPractice';
+// import EffectExample from './components/EffectExample';
+// import PropsComponent from './components/PropsComponent';
+// import ReducerPractice from './components/ReducerPractice';
 // import ReactFormControlled from './components/ReactFormControlled';
 // import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
@@ -42,6 +41,7 @@ import ReducerPractice from './components/ReducerPractice';
 // import Level1 from './components/Level1';
 // import Level1Context from './components/Level1Context';
 // import { UsernameContext } from './components/Context';
+import CallStackVisualizer from './components/CallStackVisualizer.jsx';
 function App() {
   // const username = 'nazrulislam.dev';
   // const [isShown, setIsShown] = useState(false);
@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="app">
       <h1>React JS</h1>
-      <ReducerPractice />
+      <CallStackVisualizer />
       {/* <div className="section">
         <h1>Prop Drilling</h1>
         <Level1 username={username} />

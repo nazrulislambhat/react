@@ -1,12 +1,14 @@
-import { UsernameContext } from './Context';
+import { UsernameContext } from './UsernameContext';
 import { useContext } from 'react';
 
 export default function Level3Context() {
   const username = useContext(UsernameContext);
   return (
     <div>
-      <h3>Level 3 Context </h3>
-      <p className="red">username: {username}</p>
+      <h1>
+        Your Username is: <p>Level3</p>
+        {username}
+      </h1>
     </div>
   );
 }
