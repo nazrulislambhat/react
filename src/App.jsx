@@ -26,10 +26,13 @@
 // import DataFetch from './components/DataFetch.jsx';
 // import GetPersonList from './components/GetPersonList.jsx';
 // import EffectExample from './components/EffectExample';
-// import PropsComponent from './components/PropsComponent';
+import Card from './components/Card';
+import ConditionalWelcome from './components/ConditionalWelcome';
+import Dialog from './components/Dialog';
+import PropsComponent from './components/PropsComponent';
 // import ReducerPractice from './components/ReducerPractice';
-// import ReactFormControlled from './components/ReactFormControlled';
-// import ReactFormUncontrolled from './components/ReactFormUncontrolled';
+import ReactFormControlled from './components/ReactFormControlled';
+import ReactFormUncontrolled from './components/ReactFormUncontrolled';
 // import ReactHookForm from './components/ReactHookForm';
 // import ReactForm from './components/ReactForm';
 // import NazrulForm from './components/NazrulForm';
@@ -41,7 +44,7 @@
 // import Level1 from './components/Level1';
 // import Level1Context from './components/Level1Context';
 // import { UsernameContext } from './components/Context';
-import CallStackVisualizer from './components/CallStackVisualizer.jsx';
+// import CallStackVisualizer from './components/CallStackVisualizer.jsx';
 function App() {
   // const username = 'nazrulislam.dev';
   // const [isShown, setIsShown] = useState(false);
@@ -60,7 +63,6 @@ function App() {
   return (
     <div className="app">
       <h1>React JS</h1>
-      <CallStackVisualizer />
       {/* <div className="section">
         <h1>Prop Drilling</h1>
         <Level1 username={username} />
@@ -89,7 +91,7 @@ function App() {
           </Section>
         </Section>
       </Section> */}
-      {/* <PropsComponent name="name" info="Some Information" />
+      {/* 
       <PropsComponent name="name2" info="Some Information2" /> */}
       {/* <h1 className="count">{count}</h1>
       <button onClick={handleInc}>+</button>
@@ -120,12 +122,28 @@ function App() {
       {/* <DataFetch /> */}
       {/* <GetPersonList />
       <PostPersonList /> */}
+
+      <PropsComponent name="nazrul" />
+      <PropsComponent name="sanpoot" />
       {/* <ReactFormControlled />
       <ReactFormUncontrolled /> */}
       {/* <ReactHookForm /> */}
       {/* <ReactForm /> */}
       {/* <NazrulForm /> */}
       {/* <FormikForm /> */}
+      <ConditionalWelcome isLoggedIn={true} />
+      <ConditionalWelcome isLoggedIn={false} />
+      <ConditionalWelcome isLoggedIn={null} />
+      <Card>
+        <h1>Hello World</h1>
+        <p>This is a composed component.</p>
+      </Card>
+
+      <Dialog
+        title="Delete Account"
+        content={<p>Are you sure you want to delete your account?</p>}
+        footer={<button>Confirm</button>}
+      />
     </div>
   );
 }
