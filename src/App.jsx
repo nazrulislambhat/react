@@ -33,6 +33,11 @@ import PropsComponent from './components/PropsComponent';
 // import ReducerPractice from './components/ReducerPractice';
 import ReactFormControlled from './components/ReactFormControlled';
 import ReactFormUncontrolled from './components/ReactFormUncontrolled';
+import UserProfile from './components/UserProfile';
+import withAuth from './hoc/withAuth';
+import withLogger from './hoc/withLogger';
+import withTheme from './hoc/withTheme';
+import EnhancedUserProfile from './components/EnhancedUserProfile';
 // import ReactHookForm from './components/ReactHookForm';
 // import ReactForm from './components/ReactForm';
 // import NazrulForm from './components/NazrulForm';
@@ -60,9 +65,30 @@ function App() {
   // const handleDec = () => {
   //   setCount((prevCount) => prevCount - 1);
   // };
+
+  const fakeUser = {
+    name: 'Zain',
+    email: 'zain@example.com',
+  };
+  const handleLogin = () => {
+    localStorage.setItem('authToken', '12345');
+    alert('Fake login successful! Refresh the page.');
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('authToken');
+    alert('Logged out. Refresh the page.');
+  };
   return (
     <div className="app">
       <h1>React JS</h1>
+      <button onClick={handleLogin}>🔐 Log In (Set Token)</button>
+      <button onClick={handleLogout} style={{ marginLeft: '1rem' }}>
+        🚪 Log Out (Remove Token)
+      </button>
+      <hr />
+      <EnhancedUserProfile user={fakeUser} />
+
       {/* <div className="section">
         <h1>Prop Drilling</h1>
         <Level1 username={username} />
@@ -123,15 +149,15 @@ function App() {
       {/* <GetPersonList />
       <PostPersonList /> */}
 
-      <PropsComponent name="nazrul" />
-      <PropsComponent name="sanpoot" />
+      {/* <PropsComponent name="nazrul" />
+      <PropsComponent name="sanpoot" /> */}
       {/* <ReactFormControlled />
       <ReactFormUncontrolled /> */}
       {/* <ReactHookForm /> */}
       {/* <ReactForm /> */}
       {/* <NazrulForm /> */}
       {/* <FormikForm /> */}
-      <ConditionalWelcome isLoggedIn={true} />
+      {/* <ConditionalWelcome isLoggedIn={true} />
       <ConditionalWelcome isLoggedIn={false} />
       <ConditionalWelcome isLoggedIn={null} />
       <Card>
@@ -143,7 +169,7 @@ function App() {
         title="Delete Account"
         content={<p>Are you sure you want to delete your account?</p>}
         footer={<button>Confirm</button>}
-      />
+      /> */}
     </div>
   );
 }
