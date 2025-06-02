@@ -18,10 +18,21 @@ ul {
   border-radius: 10px;
   margin: 0.5rem 0px;
 }
-.button {
-  border: 1px solid black;
+button {
+  border: 1px solid #ccc;
   border-radius: 10px;
   margin: 10px;
   padding: 10px 20px;
   margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #0a2463;
+  color: white;
+}
+button:active {
+  background-color: #FB3640;
+}
+button:disabled {
+  background-color: white;
+  cursor: not-allowed;
+  color: #E2E2E2;
 }
