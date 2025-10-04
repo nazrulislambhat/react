@@ -1,11 +1,5 @@
-import UseStateHook from './NEW/hooks/UseStateHook';
 function App() {
-  return (
-    <div className="app">
-      <h1>React JS</h1>
-      <UseStateHook />
-    </div>
-  );
+  return <h1>React</h1>;
 }
 
 export default App;
