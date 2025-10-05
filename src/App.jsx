@@ -1,10 +1,11 @@
-import ButtonComponent from '../components/ButtonComponent';
-
+import Greeting from '../components/Greeting';
+import Parent from '../components/Parent';
+import PackingList from '../components/PackingList';
+import './App.css';
 function App() {
   return (
     <>
-      <h1>React</h1>
-      <ButtonComponent />
+      <PackingList />
     </>
   );
 }
