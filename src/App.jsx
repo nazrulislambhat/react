@@ -3,11 +3,11 @@ import Parent from '../components/Parent';
 import PackingList from '../components/PackingList';
 import './App.css';
 import Accordion from '../components/Accordion';
+import Todo from '../components/Todo';
 function App() {
   return (
     <>
-      <PackingList />
-      <Accordion />
+      <Todo />
     </>
   );
 }
