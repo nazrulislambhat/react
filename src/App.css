@@ -1,4 +1,16 @@
+@import 'tailwindcss';
+
 li,
 ul {
   list-style-type: none;
+}
+button {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 5rem;
+  font-size: 2rem;
 }
