@@ -9,10 +9,13 @@ import SubmitValidation from '../forms/SubmitValidation';
 import BlurValidation from '../forms/BlurValidation';
 import ChangeValidation from '../forms/ChangeValidation';
 import MultipleInputs from '../forms/MultipleInputs';
+import TodoInput from '../components/TodoInput';
+import TodoList from '../components/TodoList';
+import TodoFilter from '../components/TodoFilter';
 function App() {
   return (
     <>
-      <MultipleInputs />
+      <TodoInput />
     </>
   );
 }
