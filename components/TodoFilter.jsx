@@ -16,7 +16,6 @@ function TodoFilter({ filter, onFilterChange }) {
         Active
       </button>
       <button
-        className="bg-red-400 border-2 p-4"
         onClick={() => onFilterChange('completed')}
         style={{ fontWeight: filter === 'completed' ? 'bold' : 'normal' }}
       >
