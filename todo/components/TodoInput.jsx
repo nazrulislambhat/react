@@ -1,15 +1,14 @@
 import React from 'react';
 
-function TodoInput({ onAdd, input, onInputChange }) {
+function TodoInput({ onAdd, onInputChange, input }) {
   return (
     <div>
       <input
-        type="text"
+        placeholder="add your todo"
         value={input}
         onChange={(e) => onInputChange(e.target.value)}
-        placeholder="Enter a new todo"
-      />
-      <button onClick={onAdd}>Add Todo</button>
+      ></input>
+      <button onClick={onAdd}>Add</button>
     </div>
   );
 }

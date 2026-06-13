@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './App.css';
 import TodoInput from '../components/TodoInput';
 import TodoFilter from '../components/TodoFilter';
 import TodoList from '../components/TodoList';
@@ -11,10 +12,16 @@ function App() {
 
   function addTodo() {
     if (!input.trim()) return;
-    setTodos([...todos, { id: Date.now(), text: input, done: false }]);
+
+    const newTodo = {
+      id: Date.now(),
+      text: input,
+      done: false,
+    };
+
+    setTodos([...todos, newTodo]);
     setInput('');
   }
-
   function deleteTodo(id) {
     setTodos(todos.filter((todo) => todo.id !== id));
   }
@@ -27,22 +34,26 @@ function App() {
     );
   }
 
-  const filteredTodos = todos.filter((todo) => {
-    if (filter === 'active') return !todo.done;
-    if (filter === 'completed') return todo.done;
+  const filteredTodo = todos.filter((todo) => {
+    if (filter === 'active') return todo.done === false;
+    if (filter === 'completed') return todo.done === true;
     return true;
   });
 
   return (
     <>
       <h1>Todo App</h1>
-      <TodoInput input={input} onInputChange={setInput} onAdd={addTodo} />
-      <TodoFilter filter={filter} onFilterChange={setFilter} />
+      <TodoInput input={input} onAdd={addTodo} onInputChange={setInput} />
+      <hr />
+      <h2>Filters</h2>
+      <TodoFilter filter={filter} filterChange={setFilter} />
+      <hr />
       <TodoList
-        todos={filteredTodos}
+        todos={filteredTodo}
         onToggle={toggleTodo}
         onDelete={deleteTodo}
       />
+      <hr />
       <TodoCount todos={todos} />
     </>
   );

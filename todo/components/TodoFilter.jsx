@@ -1,25 +1,25 @@
 import React from 'react';
 
-function TodoFilter({ filter, onFilterChange }) {
+function TodoFilter({ filter, filterChange }) {
   return (
     <div>
       <button
-        onClick={() => onFilterChange('all')}
+        onClick={() => filterChange('all')}
         style={{ fontWeight: filter === 'all' ? 'bold' : 'normal' }}
       >
         All
       </button>
       <button
-        onClick={() => onFilterChange('active')}
-        style={{ fontWeight: filter === 'active' ? 'bold' : 'normal' }}
-      >
-        Active
-      </button>
-      <button
-        onClick={() => onFilterChange('completed')}
+        onClick={() => filterChange('completed')}
         style={{ fontWeight: filter === 'completed' ? 'bold' : 'normal' }}
       >
         Completed
+      </button>
+      <button
+        onClick={() => filterChange('active')}
+        style={{ fontWeight: filter === 'active' ? 'bold' : 'normal' }}
+      >
+        Active
       </button>
     </div>
   );
