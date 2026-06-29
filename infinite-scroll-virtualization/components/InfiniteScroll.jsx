@@ -89,6 +89,10 @@ function InfiniteScroll() {
   const visiblePosts = posts.slice(startIndex, endIndex); // ONLY these get rendered
   const offsetY = startIndex * ITEM_HEIGHT; // push visible items down correctly
 
+  console.log(
+    `Rendering items ${startIndex} to ${endIndex} of ${posts.length}`,
+  );
+
   return (
     <div style={{ padding: '24px', fontFamily: 'Arial' }}>
       <h1>Posts ({posts.length} loaded)</h1>
