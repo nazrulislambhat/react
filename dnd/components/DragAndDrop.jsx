@@ -63,7 +63,14 @@ function DragAndDrop() {
       }}
     >
       <h1 style={{ marginBottom: '8px' }}>🖱️ Drag to Reorder</h1>
-      <p style={{ color: '#666', marginBottom: '24px', fontSize: '14px' }}>
+      <p
+        style={{
+          color: '#666',
+          marginBottom: '24px',
+          marginTop: '24px',
+          fontSize: '14px',
+        }}
+      >
         Drag any item to reorder the list
       </p>
 
@@ -102,7 +109,7 @@ function DragAndDrop() {
               }}
             >
               {/* drag handle */}
-              <span style={{ color: '#ccc', fontSize: '18px', cursor: 'grab' }}>
+              <span style={{ color: '#000', fontSize: '18px', cursor: 'grab' }}>
                 ⠿
               </span>
 
